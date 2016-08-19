@@ -1,8 +1,9 @@
 <div class="header" id="canvas_wrap" style="display: inline-block;">
   <canvas id="canvas"></canvas>
 </div>
+
 <script type="text/javascript">
-//<!--
+
 var canvasSupport = !!document.createElement('canvas').getContext;
 if (canvasSupport) {
     /* 兼容不支持 requestAnimationFrame 的浏览器 */
@@ -31,7 +32,7 @@ if (canvasSupport) {
     var canvas = document.getElementById('canvas'),
     ctx = canvas.getContext('2d'),
     w = canvas.width = document.body.offsetWidth,
-    //h = canvas.height = window.innerHeight,
+    // h = canvas.height = window.innerHeight,
     h = canvas.height = 480,
     hue = 217,
     stars = [],
