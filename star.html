@@ -6,7 +6,6 @@
 
 var canvasSupport = !!document.createElement('canvas').getContext;
 if (canvasSupport) {
-    /* 兼容不支持 requestAnimationFrame 的浏览器 */
     (function() {
         var lastTime = 0;
         var vendors = ['ms', 'moz', 'webkit', 'o'];
